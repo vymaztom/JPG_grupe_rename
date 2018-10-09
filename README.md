@@ -1,3 +1,3 @@
 # JPG_grupe_rename
 
-Project is not completed, it coudl not run.
+For run use run.py and python3.x

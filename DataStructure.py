@@ -1,6 +1,8 @@
 import os
 from askDir import *
 from PictureFile import *
+from askText import *
+
 
 class DataStructure:
     '''datastructure of pictures, for make some relations'''
@@ -45,11 +47,10 @@ class DataStructure:
         '''retrun list of strustures PictureFile'''
         retrun(self.data)
 
-    def renameInFolder(self, prefix = "", suffix = ""):
+    def renameInFolder(self):
         '''run function for rename Picture files by using suf/prefix'''
         dir = askDir()
+        value = askText()
         self.loadDataFromDirectory(dir)
         for one in self.data:
-            os.renames(old = one.name, new = (prefix + one.newName + suffix + "." + str(one.endName)))
-
-    
+            os.renames(old = one.name, new = (str(value.ret[0]) + one.newName + str(value.ret[1]) + "." + str(one.endName)))

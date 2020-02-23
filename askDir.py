@@ -10,3 +10,6 @@ def askDir():
     directory = askdirectory()
     win.destroy()
     return(directory)
+
+if __name__ == '__main__':
+    print(askDir())

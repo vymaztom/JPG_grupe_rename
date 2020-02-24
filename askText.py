@@ -5,7 +5,6 @@ class askText:
         self.master = Tk()
         self.master.title("Set prefix and suffix")
         self.master.geometry("200x80+600+300")
-        self.master.iconbitmap('icon.ico')
         Label(self.master, text="Prefix Name").grid(row=1)
         Label(self.master, text="Suffix Name").grid(row=2)
 
